@@ -1,0 +1,42 @@
+---
+title: "Peer Review Questions"
+format: 
+    pdf: 
+      echo: false
+      warning: false
+      message: false
+---
+
+## 1.Code Review and Efficiency: Are there any parts of the code that seem inefficient or redundant? How could these sections be optimized for better performance or clarity?
+
+Overall, this code was easy to understand and follow. The main limitation I found was in not having a final dataset. Instead of a final dataset, they had a data file that was merged into the working code. Additionally, instead of a “rating variables” file, they did this all when the data file for 2010 was imported, which seemed inefficient to do for each submission. A major optimization for this homework would have been a final dataset built, to prevent needing to rebuild this for each submission in the submission notebook, as well as including the rating variables/quality variables in this final dataset or in their 2010 dataset. Additionally, there were aspects of their code that were inefficient as well. I think this is particularly evident for Questions 5 through 9. This may have been a result of the differences in our choices for visualizations, but also a result of inefficiencies in code, variable naming, and titles. One example is question 8, where the code of my peer is 79 lines, and mine is 8 lines. In Question 8, we both had similar results, and also similar to the answer key provided, the difference of 71 lines seems unnecessary and inefficient.
+
+## 2.Comparison of Results: How well do their results compare with your own? Are there any areas where the two analyses are particularly different?
+
+Our results were fairly different. Overall, my peers answer key more closely aligned with the answer key shared with us at the end of the submission period. We had some values that were very closely aligned. Overall, the main divergence between our answers was in questions 7 and 8. We also chose different methods for visualizing our results, which created a bit of difficulty in comparing some results. I also rounded most of my values, whereas my peer did not appear to round. 
+
+In questions 3, 8, and 9, we had very different methods of visualization, which were also different from the visualization provided in the answer key for homework three. Although our methods of visualization were fairly different, they still display similar results. Our choices of visualization do not impact interpretability or the accuracy of results. 
+
+The rest of our results are somewhat different. The market shares in questions 1 and 2 are different, while the mean star rating, mean enrollments, and plan counts are the same. My peer’s results for the market shares are more closely aligned with the output provided in the answer key for this homework. 
+
+In Question 4, we had different outputs for most years and star ratings, but our constant or reference values are almost the same. In this question, my output more closely aligns with the output from the answer key. 
+
+In Questions 5 and 6, our outputs were very different. In Question 5, we have a very different number of plans, and we chose to visualize the RD estimates at the 3 and 3.5 star thresholds very differently in Question 6, which made comparison more difficult. I think that the divergence in our results is related to differences in our 2010 dataset, as we again have very different numbers of observations.
+
+Again, in question 7, we have different answers, but these are more similar than some of the other questions, with only a few years displaying particularly different results. 
+
+For Question 9, we have very different plots. Both of our answers are fairly different from the answer key, but mine is closer to the answer key. In my reviewee’s plot, all values are positive, while in my answers, I have one negative value and one that is fairly close to 0. In the answer key provided, there are two negative values, with one fairly close to 0. My reviewee also has a much higher range with the Part D plans above the cutoff, reaching 0.8, with mine reaching about 0.225 for the same category. 
+
+## 3.Replicability and Documentation: Are you able to clone your peer’s repository and replicate their results?
+
+Yes, I was able to successfully clone my peers repository and replicate their results. As described, it was unclear where their data build files were located, but once this was located, replicating their code and building their data files was very easy. Replicating their ipynb, qmd, and pdf’s was very easy. 
+
+## 4. Diagnosing Replication: If you were unable to replicate their results using their code, what do you think is the central problem? If you were able to replicate, are there things that could have been changed (e.g., code structure, documentation, commenting, etc) that would have made it easier?
+
+I don’t think any changes could have been made to make the code easier to replicate; all of their code was straightforward. There were very few comments throughout the files, and for questions where there were multiple large code chunks, it would have been useful to understand the thinking behind splitting these up and the purposes of each. This is especially highlighted in Questions 6 through 9. For these questions, the code could have been more efficient, but given the format they used, it was difficult to understand what each code chunk was being used for, and comments would have been very useful here. There were some comments used in question 7, but this is the only location I saw these; it would have been helpful to have been more consistent in the usage of comments. 
+
+The other location where replication could have been easier is the structure of their repository. I would have had a data build folder in their repository, instead of each data build file being in the submission 1 folder. This made finding the build files more difficult and slightly illogical, as well as navigating the submission 1 file overwhelming. Finally, they did not include the questions in their homework, which would have been helpful if I were unfamiliar with what was being asked in each question.
+
+## 5.Final Thoughts: How might you update your own code based on your review of your peer’s work?
+
+The main things I would change in my code are the addition of a README file and more comments throughout my code. I included more comments in my homeworks 4 and 5 than in homeworks 1 through 3, but the lack of comments in my peers’ code highlighted the need and benefits of including comments. I did feel as though, given that my code chunks were much smaller, there is a decreased need for comments, but as the length of code increases, so does the need for explanatory comments. They also included a README, which highlighted my lack of a README file. I do feel though, that if a README file is included, it should be comprehensive and clear, which at times was lacking in my peer’s file, but it did aid in ease of navigation. I also think that my reviewee had a much better organization for qmd. Using Quarto was new to me, and reading through their qmd file helped me understand how to optimize my code for appearance in a pdf, so this is one of the most significant things I would implement going forward. 
